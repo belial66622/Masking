@@ -3,19 +3,22 @@ using Assets.Script.Utility;
 
 namespace Assets.Script.Boss.State
 {
-    internal class BossMaskerMode : IState
+    internal class BossMaskerState : IState
     {
         private BossStateControl _bossStateControl;
         private IBossState bossState;
-        public BossMaskerMode(BossStateControl bossStateControl)
+        private IAttack _attack;
+        public BossMaskerState(BossStateControl bossStateControl , IAttack attack)
         {
             _bossStateControl = bossStateControl;
             bossState = bossStateControl;
+            _attack = attack;
         }
 
         public void OnEnter()
         {
-            Helper.Log("Masker enter");
+            Helper.Log("Masker enter"); 
+            _attack.Attack();
             _bossStateControl.StartCoroutine(Helper.delay(
                 () =>
                 {

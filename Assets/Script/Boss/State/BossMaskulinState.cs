@@ -8,15 +8,18 @@ namespace Assets.Script.Boss.State
     {
         private BossStateControl _bossStateControl;
         private IBossState bossState;
-        public BossMaskulinState(BossStateControl bossStateControl)
+        private IAttack _attack;
+        public BossMaskulinState(BossStateControl bossStateControl, IAttack attack)
         {
             _bossStateControl = bossStateControl;
             bossState = bossStateControl;
+            _attack = attack;
         }
 
         public void OnEnter()
         {
             Helper.Log("Maskulin enter");
+            _attack.Attack();
             _bossStateControl.StartCoroutine(Helper.delay(
                 () =>
                 {

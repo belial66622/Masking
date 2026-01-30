@@ -1,4 +1,5 @@
 using System;
+using Assets.Script.Boss.Attack;
 using Assets.Script.Boss.State;
 using Assets.Script.Interface;
 using Script.Boss.Health;
@@ -19,24 +20,33 @@ namespace Assets.Script.Boss
 
         [SerializeField] private float _attackCooldown;
         [SerializeField] private float _stunTime;
+        [SerializeField] private Transform _mulutProjectileLoc;
 
         private bool _isDead = false;
         private bool _isStunned;
         private bool _isCooldownAttack = true;
 
+        [SerializeField]
+        private MaskerAttack _maskerAttack;
+        [SerializeField]
+        private MaskingAttack _maskingAttack;
+        [SerializeField]
+        private MaskulinAttack _maskulinAttack;
+
         private void Update() => _stateMachine.Tick();
         // Update is called once per frame
+        #region Mono
         void Awake()
         {
             health.EventDelete();
             _stateMachine = new StateMachine();
 
             var deadState = new BossDeadState(this);
-            var MaskerState = new BossMaskerMode(this);
-            var MaskulinState = new BossMaskulinState(this);
-            var MaskingState = new BossMaskingState(this);
+            var MaskerState = new BossMaskerState(this, _maskerAttack);
+            var MaskulinState = new BossMaskulinState(this, _maskulinAttack);
+            var MaskingState = new BossMaskingState(this, _maskingAttack);
             var stunState = new BossStunState(this, _stunTime);
-            var idleState = new BossIdleState(this,health, _attackCooldown);
+            var idleState = new BossIdleState(this, health, _attackCooldown);
 
             //idle to skillstate
             At(idleState, MaskerState, CanAttackMasker());
@@ -90,6 +100,8 @@ namespace Assets.Script.Boss
             health.OnPoiseDepleted -= Stun;
             health.OnDeath -= Dead;
         }
+        #endregion
+
         #region IBossState
         public void CanAttack()
         {
@@ -99,12 +111,13 @@ namespace Assets.Script.Boss
         public void ChooseAttack()
         {
             var t = Enum.GetNames(typeof(AttackState)).Length;
-            _attackingState =  (AttackState)UnityEngine.Random.Range(0, t);
+            //_attackingState = (AttackState)UnityEngine.Random.Range(0, t);
+            _attackingState = (AttackState)0;
         }
 
         public void ClearStun()
         {
-           _isStunned = false;
+            _isStunned = false;
         }
 
         public void Cooldown()
@@ -119,7 +132,25 @@ namespace Assets.Script.Boss
 
         public void Stun()
         {
-           _isStunned = true;
+            _isStunned = true;
+        }
+
+        #endregion
+
+        #region Main
+        public void AnimationEnded()
+        {
+            Cooldown();
+        }
+
+        public Transform GetMulut()
+        {
+            return _mulutProjectileLoc;
+        }
+
+        public Transform GetPlayer()
+        {
+            return _player.transform;
         }
         #endregion
 

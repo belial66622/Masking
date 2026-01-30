@@ -7,15 +7,17 @@ namespace Assets.Script.Boss.State
     {
         private BossStateControl _bossStateControl;
         private IBossState bossState;
-        public BossMaskingState(BossStateControl bossStateControl)
+        private IAttack _attack;
+        public BossMaskingState(BossStateControl bossStateControl, IAttack attack)
         {
             _bossStateControl = bossStateControl;
             bossState = bossStateControl;
+            _attack = attack;
         }
 
         public void OnEnter()
         {
-            Helper.Log("Masking enter");
+            Helper.Log("Masking enter"); _attack.Attack();
             _bossStateControl.StartCoroutine(Helper.delay(
                 () =>
                 {
@@ -25,7 +27,7 @@ namespace Assets.Script.Boss.State
 
         public void OnExit()
         {
-            Helper.Log("Msaking Exit");
+            Helper.Log("Masking Exit");
         }
 
         public void Tick()
