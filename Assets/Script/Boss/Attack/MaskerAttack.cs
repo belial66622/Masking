@@ -10,12 +10,14 @@ namespace Assets.Script.Boss.Attack
     {
         [SerializeField]
         private Ingus Ingus;
+        [SerializeField]
+        BossStateControl _boss;
 
         public void Attack()
         {
             Helper.Log("maskerAttack"); 
             var pro = Instantiate(Ingus);
-            pro.SetProjectile(_bossStateControl.GetMulut().position, AddOffset(_bossStateControl.GetMulut().rotation), _bossStateControl.GetPlayer().position);
+            pro.SetProjectile(_bossStateControl.GetMulut().position, AddOffset(_bossStateControl.GetMulut().rotation), _bossStateControl.GetPlayer().position, _bossStateControl);
 
         }
 
