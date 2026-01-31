@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 430503c3db8e92d45881b2de683eaa8c
+guid: 3df81162f99fb914fb21abb67f4db501
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,118 +93,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Topan_attack_0
+      name: defensevfx_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 0
-        width: 40
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 956e8edfa21447b46a126729dc8f6af4
-      internalID: 1809596364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topan_attack_1
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 0
-        width: 48
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90f4602646bea434aba6c0c7463ab4ab
-      internalID: 956707807
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topan_attack_2
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 0
-        width: 51
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8bb2c2099dfb654da595ac2a63911c8
-      internalID: 26524121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topan_attack_3
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 0
-        width: 51
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21c1b90dbf315cb44824580c9db55478
-      internalID: -174446756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topan_attack_4
-      rect:
-        serializedVersion: 2
-        x: 254
-        y: 0
-        width: 51
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 025935a7d48186d4ea620d3e6e189573
-      internalID: -1719519587
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Topan_attack_5
-      rect:
-        serializedVersion: 2
-        x: 314
-        y: 0
+        x: 71
+        y: 74
         width: 52
-        height: 58
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,20 +107,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21dd3c5d883f5a341803e987c80a4a61
-      internalID: -973023181
+      spriteID: 6824a0a2c34bba741b3c586f521c7e51
+      internalID: 670588186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Topan_attack_6
+      name: defensevfx_1
       rect:
         serializedVersion: 2
-        x: 378
-        y: 0
-        width: 34
-        height: 59
+        x: 261
+        y: 64
+        width: 73
+        height: 77
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,8 +128,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 846827be7e59d69439fbcd5f5bc84e93
-      internalID: 1684389221
+      spriteID: 099cfb860c5152d409333ea2823e4ca3
+      internalID: -833151000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defensevfx_2
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 46
+        width: 146
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ac554273a28444d9eb7a41d0fae0c1
+      internalID: 1440177368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defensevfx_3
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 33
+        width: 163
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec62e3bb46876064aa6b21658ed9c04b
+      internalID: 952133800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defensevfx_4
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 20
+        width: 167
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95550d6cc65d5a948883dbc66b5b4ba3
+      internalID: -413448817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defensevfx_5
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 2
+        width: 180
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebff60005d78bab4da5132f6bd49eb60
+      internalID: -143337367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defensevfx_6
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 3
+        width: 198
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcf17fcf2139634d9a14b48fa53b32e
+      internalID: -1540288357
       vertices: []
       indices: 
       edges: []
@@ -242,7 +242,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 694df31dea3f4544b9f4c78bcfcaac95
+    spriteID: 9006c866ee67d164fbc91a0ece28a6b8
     internalID: 0
     vertices: []
     indices: 
@@ -250,13 +250,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Topan_attack_0: 1809596364
-      Topan_attack_1: 956707807
-      Topan_attack_2: 26524121
-      Topan_attack_3: -174446756
-      Topan_attack_4: -1719519587
-      Topan_attack_5: -973023181
-      Topan_attack_6: 1684389221
+      defensevfx_0: 670588186
+      defensevfx_1: -833151000
+      defensevfx_2: 1440177368
+      defensevfx_3: 952133800
+      defensevfx_4: -413448817
+      defensevfx_5: -143337367
+      defensevfx_6: -1540288357
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

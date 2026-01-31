@@ -6,12 +6,14 @@ using TMPro;
 public class GameManagerScript : MonoBehaviour
 {
     enum Action {Idle, Attack, Defense, Parry}
+    enum Result {Attack, Defense, Parry, Miss}
     public TextMeshProUGUI resultText;
     Action player1 = Action.Idle;
     Action player2 = Action.Idle;
-    float parryTime = 0.5f;
+    float parryTime = 0.2f;
     float p1DefenseTime;
     float p2DefenseTime;
+    public VFXScript VFX;
     
 
     // Update is called once per frame
@@ -22,8 +24,10 @@ public class GameManagerScript : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.S))
             player1 = Action.Attack;
             if (Input.GetKeyDown(KeyCode.D))
-            player1 = Action.Defense;
-            p1DefenseTime = Time.time;
+            {
+                player1 = Action.Defense;
+                p1DefenseTime = Time.time;
+            }
         }
 
         if (player2 == Action.Idle)
@@ -31,39 +35,63 @@ public class GameManagerScript : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.J))
             player2 = Action.Attack;
             if (Input.GetKeyDown(KeyCode.K))
-            player2 = Action.Defense;
-            p2DefenseTime = Time.time;
+            {
+                player2 = Action.Defense;
+                p2DefenseTime = Time.time;
+            }
         }
 
         if (player1 != Action.Idle && player2 != Action.Idle)
         {
-            Battle();
+            Result result = Battle();
+            PlayBattleVFX(result);
+            Invoke(nameof(ResetRound), 1.5f);
         }
         
     }
 
-    void Battle()
+    Result Battle()
     {
         DefenseParry();
         if (player1 == Action.Attack && player2 == Action.Attack)
         {
             resultText.text = "attack";
+            return Result.Attack;
         }
         else if (player1 == Action.Parry && player2 == Action.Parry)
         {
             resultText.text = "parry";
+            return Result.Parry;
         }
         else if (player1 == Action.Defense && player2 == Action.Defense)
         {
             resultText.text = "defense";
+            return Result.Defense;
         }
         else
         {
             resultText.text = "miss";
+            return Result.Miss;
         }
-        Invoke(nameof(ResetRound), 1.5f);
     }
 
+    void PlayBattleVFX(Result result)
+    {
+        switch (result)
+        {
+            case Result.Attack:
+                VFX.PlayAttack();
+                break;
+
+            case Result.Parry:
+                VFX.PlayParry();
+                break;
+
+            case Result.Defense:
+                VFX.PlayDefense();
+                break;
+        }
+    }
     void DefenseParry()
     {
         if (player1 == Action.Defense && player2 == Action.Defense)

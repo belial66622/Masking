@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fc93ae8a995ecca4e8890e2b3501ca75
+guid: 7f156643336f173428a010d46b4697f1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,13 +93,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Aceng_attack_0
+      name: defense_aceng_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 11
         y: 0
         width: 40
-        height: 59
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -107,20 +107,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dae459c891f02448a46284c9458997c
-      internalID: -975227472
+      spriteID: 1f4bef63149f21e4ab04a8e31710133c
+      internalID: 2084742543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aceng_attack_1
+      name: defense_aceng_1
       rect:
         serializedVersion: 2
         x: 63
         y: 0
-        width: 48
-        height: 59
+        width: 47
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,103 +128,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58e5ad14a248528459ab2261f7813528
-      internalID: 1780930637
+      spriteID: f79ca852852c8c741a43209fbfa656e5
+      internalID: 1223000781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aceng_attack_2
+      name: defense_aceng_2
       rect:
         serializedVersion: 2
         x: 122
         y: 0
-        width: 51
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75ffdb3e1c0afa9458e5fd0d49843ad8
-      internalID: -803769745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Aceng_attack_3
-      rect:
-        serializedVersion: 2
-        x: 183
-        y: 0
-        width: 51
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 123f010cb4474dc4d9215c7f3fb9177b
-      internalID: -1765103516
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Aceng_attack_4
-      rect:
-        serializedVersion: 2
-        x: 244
-        y: 0
-        width: 51
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5498a1f8fff61748bbddf5ee4460a52
-      internalID: 1529782889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Aceng_attack_5
-      rect:
-        serializedVersion: 2
-        x: 305
-        y: 0
-        width: 52
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5eb9c2b98cc93c942bbef4938adf08a7
-      internalID: -1235245165
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Aceng_attack_6
-      rect:
-        serializedVersion: 2
-        x: 381
-        y: 0
-        width: 34
+        width: 45
         height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -233,8 +149,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99247b5000d19dc4ca96af7441b38f3b
-      internalID: 85896029
+      spriteID: be8f0d1a89db5274d8ecede8426f9a93
+      internalID: 1376815082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defense_aceng_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 0
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1968ce2b3f464439b3952fdfc6ce79
+      internalID: -408437190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defense_aceng_4
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 0
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6a7778da29d2e429f15960d79af9a5
+      internalID: 911322437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defense_aceng_5
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 0
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75888de12b569004da3db9b7c898b33e
+      internalID: -552055036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defense_aceng_6
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb85cc240959e247a1118e2d9042fa5
+      internalID: 2117269495
       vertices: []
       indices: 
       edges: []
@@ -242,7 +242,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7282bb287deed8d4085323881db87a78
+    spriteID: 7a580da9920896c4f9d9b0fad7f9d0fb
     internalID: 0
     vertices: []
     indices: 
@@ -250,13 +250,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Aceng_attack_0: -975227472
-      Aceng_attack_1: 1780930637
-      Aceng_attack_2: -803769745
-      Aceng_attack_3: -1765103516
-      Aceng_attack_4: 1529782889
-      Aceng_attack_5: -1235245165
-      Aceng_attack_6: 85896029
+      defense_aceng_0: 2084742543
+      defense_aceng_1: 1223000781
+      defense_aceng_2: 1376815082
+      defense_aceng_3: -408437190
+      defense_aceng_4: 911322437
+      defense_aceng_5: -552055036
+      defense_aceng_6: 2117269495
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

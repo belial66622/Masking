@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 814483b09de94a249a150e0691d69b68
+guid: a0ca9c2959b304243a0852433a34b69f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,10 +93,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Aceng_defense_0
+      name: Defense_topan_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 9
         y: 0
         width: 40
         height: 59
@@ -107,17 +107,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ab4fa5dde1f0be40b2ff031c49b0985
-      internalID: 1241079676
+      spriteID: d2df4ad197263e8428d9b0f1c0af3dd0
+      internalID: 632391622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aceng_defense_1
+      name: Defense_topan_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 72
         y: 0
         width: 47
         height: 59
@@ -128,17 +128,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8de2fe89f5f71c14aae886b47b9df799
-      internalID: -105858774
+      spriteID: 2f3d5e34231576a499ea0cc776d49aa4
+      internalID: -1999854998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aceng_defense_2
+      name: Defense_topan_2
       rect:
         serializedVersion: 2
-        x: 122
+        x: 137
         y: 0
         width: 46
         height: 55
@@ -149,17 +149,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da27ebe17b6b3b04db2e33f147584f4c
-      internalID: 1332320619
+      spriteID: 09a5f4c10a9ec714393515536db4f227
+      internalID: 1467589649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aceng_defense_3
+      name: Defense_topan_3
       rect:
         serializedVersion: 2
-        x: 183
+        x: 198
         y: 0
         width: 46
         height: 56
@@ -170,17 +170,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e77ccd9ddc56aa48b925a611f2aef27
-      internalID: 337227876
+      spriteID: 2eda2d3d79cc1dd4cac0f3d6bd6411e3
+      internalID: -865065542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aceng_defense_4
+      name: Defense_topan_4
       rect:
         serializedVersion: 2
-        x: 244
+        x: 259
         y: 0
         width: 46
         height: 56
@@ -191,17 +191,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27a43f6e389ec7542914b36c0a73cfc0
-      internalID: -1022433189
+      spriteID: a6dc00124081d544fa1ca946f4e794f3
+      internalID: 205922370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aceng_defense_5
+      name: Defense_topan_5
       rect:
         serializedVersion: 2
-        x: 306
+        x: 319
         y: 0
         width: 46
         height: 56
@@ -212,17 +212,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be520ce139fcf4642b184849d6d09197
-      internalID: 136969483
+      spriteID: d70e4ca349b768f4cb1154c1dc692ebb
+      internalID: -1226107748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aceng_defense_6
+      name: Defense_topan_6
       rect:
         serializedVersion: 2
-        x: 376
+        x: 378
         y: 0
         width: 39
         height: 59
@@ -233,8 +233,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 000a97179088a704294aa2c3f3a8d20d
-      internalID: 15734404
+      spriteID: dd92493ff85959a41953994cab3468d4
+      internalID: 393750361
       vertices: []
       indices: 
       edges: []
@@ -242,7 +242,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e0d7ba94c671a63409a20159ea76fe7f
+    spriteID: dc721ccc20846224199c14ea9bbd973f
     internalID: 0
     vertices: []
     indices: 
@@ -250,13 +250,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Aceng_defense_0: 1241079676
-      Aceng_defense_1: -105858774
-      Aceng_defense_2: 1332320619
-      Aceng_defense_3: 337227876
-      Aceng_defense_4: -1022433189
-      Aceng_defense_5: 136969483
-      Aceng_defense_6: 15734404
+      Defense_topan_0: 632391622
+      Defense_topan_1: -1999854998
+      Defense_topan_2: 1467589649
+      Defense_topan_3: -865065542
+      Defense_topan_4: 205922370
+      Defense_topan_5: -1226107748
+      Defense_topan_6: 393750361
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
