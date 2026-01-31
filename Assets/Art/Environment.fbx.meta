@@ -7,6 +7,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Hanger Baju
+    second: {fileID: 2100000, guid: b8414d9c289d4384dbb92b9562d4dc84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lamp
+    second: {fileID: 2100000, guid: 2a376a7920502eb4fb8f408aa9b651d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 0808aa5e7737beb4ca3b72e2227a4ac0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Material.001
     second: {fileID: 2100000, guid: 04005a466dded244389c5f14c21e9af0, type: 2}
   - first:
@@ -37,43 +52,148 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 02ef0cc5a7a4aa94db3e47d4b0268893, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Material.008
     second: {fileID: 2100000, guid: fdab41b9eea33f54293ae872f807b0a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.009
+    second: {fileID: 2100000, guid: d11d3cb4e52cb9f4f904a06da7936a39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.010
+    second: {fileID: 2100000, guid: 3aa53d358ff916d4ab6011c4f906a6b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.012
+    second: {fileID: 2100000, guid: 534d3e965c669a14394e29151c554cda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.013
+    second: {fileID: 2100000, guid: 948ec43cd2caf11489d8dc787eb47a0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.014
+    second: {fileID: 2100000, guid: 248c477f36d40f14ba2e590ddf9ed577, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.015
+    second: {fileID: 2100000, guid: 5e8d059b91845d441bde3833198c1fc2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.016
+    second: {fileID: 2100000, guid: 3f1080f384f75844792ba1f09ff53633, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jam
+    second: {fileID: 2100000, guid: 4402a2e7b8067ad46bf04839f74a32d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: manekin
+    second: {fileID: 2100000, guid: e262fbaefd826e2468f7ab723d1cefa0, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: BIGSQUARES
-    second: {fileID: 2800000, guid: 08f00bc6095c72945acc757bed670b59, type: 3}
+    second: {fileID: 2800000, guid: 5ae5983c7ced9c946b322b92ee53f299, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: CREAKYWOOD
-    second: {fileID: 2800000, guid: b184dace3e1ecf345a94e37932c069ab, type: 3}
+    second: {fileID: 2800000, guid: fa50d31966dd8184ea7b884f85932e00, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DARKWOOD
-    second: {fileID: 2800000, guid: af1a616809c62104d80028ecc8ce390f, type: 3}
+    second: {fileID: 2800000, guid: 440814c30b91c8f4fbad25c909648e9f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DIRTHEXAGONS
-    second: {fileID: 2800000, guid: 18b56cec88cacc940bce2125f1e25542, type: 3}
+    second: {fileID: 2800000, guid: e94af24790e26974a9d4f8c7737b898a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: GARAGE
-    second: {fileID: 2800000, guid: e4d7a744305fca844941b475a9f018a6, type: 3}
+    second: {fileID: 2800000, guid: aa5bff01a312e11429a2819e825942b0, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: ROUNDBRICKS
-    second: {fileID: 2800000, guid: e077258ce0e674e4f8d0ac2020ac8e52, type: 3}
+    second: {fileID: 2800000, guid: 51a41cbebcfbd0e48b52b9f988a3fbe9, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: SUPPORT
-    second: {fileID: 2800000, guid: 412eff3abe0f9a9458b6ce5ce57cce39, type: 3}
+    second: {fileID: 2800000, guid: ed989bd9695328c49b5b5852741867ec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TINYSQUARES
+    second: {fileID: 2800000, guid: 32773c7d499b7b54ca19b8852aa54c9b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ac_rusak
+    second: {fileID: 2800000, guid: 84b8c241b95db1f45b081ad30a46f588, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: api
+    second: {fileID: 2800000, guid: 42ca2c290bd51c14d92f6d3ccac1e084, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cermin
+    second: {fileID: 2800000, guid: 1368d820428781248accc5c69867176d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: coretan tembok1
+    second: {fileID: 2800000, guid: 7ba8a56cd019e7e4a85830d70e03d392, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cult symbol
+    second: {fileID: 2800000, guid: 1c1d010477e34db4ead0d63e3a130908, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hanger baju
+    second: {fileID: 2800000, guid: bce775d6d0296c349ac98ceed15a2812, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jalangkung
+    second: {fileID: 2800000, guid: 68156dde4dfe1b04eb24ecd6a924f364, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jam
+    second: {fileID: 2800000, guid: 396bb00911c6e954594aaaceb6bc4391, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp
+    second: {fileID: 2800000, guid: 56a7ae4d2b606d6489082eb83275b119, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: manekin
+    second: {fileID: 2800000, guid: 41a8f01662134f64586ef59291a3d56a, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
