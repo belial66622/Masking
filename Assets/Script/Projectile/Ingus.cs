@@ -25,7 +25,7 @@ namespace Assets.Script.Projectile
 
             Rotate();
 
-            if (Vector3.Distance(transform.position, _target) < 1.5f)
+            if (Vector3.Distance(transform.position, _target) < .5f)
             { 
                 Destroy(gameObject);
             }
