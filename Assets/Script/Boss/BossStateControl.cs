@@ -24,6 +24,7 @@ namespace Assets.Script.Boss
         [SerializeField] private Transform _mulutProjectileLoc;
         [SerializeField] private Animator _animator;
         [SerializeField] private AttackArea _attackArea;
+        [SerializeField] private Animator _headAnimator;
 
         public static int MASKING = Animator.StringToHash("Masking");
         public static int MASKER = Animator.StringToHash("Masker");
@@ -186,7 +187,7 @@ namespace Assets.Script.Boss
             {
                 if (col.TryGetComponent(out Ihealth ihealth))
                 {
-                    ihealth.OnDamage(1);
+                    ihealth.OnDamage(10);
                 }
             }
             else 
