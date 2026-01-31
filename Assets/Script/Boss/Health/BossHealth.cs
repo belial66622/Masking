@@ -4,6 +4,7 @@ using Assets.Script.Interface;
 using UnityEngine;
 using NaughtyAttributes;
 using Assets.Script.Utility;
+using UnityEngine.UI;
 
 namespace Script.Boss.Health
 {
@@ -18,6 +19,8 @@ namespace Script.Boss.Health
         [SerializeField] private Material _damagedMaterial;
 
         [SerializeField] private BossMaterialControl _currentMesh;
+
+        [SerializeField] private Image _healthHud;
 
         private Coroutine _coroutine;
         #endregion
@@ -36,6 +39,7 @@ namespace Script.Boss.Health
                 ChangeMat(_currentMesh, _damagedMaterial);
             }
             ChangeHealth(damage);
+            _healthHud.fillAmount = _currentHealth/MaxHealth;
             OnHealthChange?.Invoke(_currentHealth);
             if (_currentHealth <= 0)
             {
