@@ -15,12 +15,12 @@ namespace Assets.Script
 
         public void EndAttack()
         {
-            bossStateControl.AttackAnimationFinished();
+            bossStateControl?.AttackAnimationFinished();
         }
 
         public void Attack()
         {
-            bossStateControl.ActivateAttack();
+            bossStateControl?.ActivateAttack();
         }
     }
 }
