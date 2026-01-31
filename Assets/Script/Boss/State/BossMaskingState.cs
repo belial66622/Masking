@@ -21,7 +21,7 @@ namespace Assets.Script.Boss.State
         public void OnEnter()
         {
             bossState.DoneAttack += AttackFinished;
-            bossState.OnAttack += AttackFinished;
+            bossState.OnAttack += Attack;
             Helper.Log("Masking enter");
             _animator.SetTrigger(BossStateControl.MASKING);
         }

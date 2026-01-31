@@ -47,7 +47,7 @@ namespace Assets.Script.Projectile
             float distance = toTarget.magnitude;
             Helper.Log($"dis {distance}");
             float t = Mathf.InverseLerp(15, 0f, distance);
-            float turnSpeed = Mathf.Lerp(rotationspeed, rotationspeed*5, t);
+            float turnSpeed = Mathf.Lerp(rotationspeed, rotationspeed*7, t);
 
             // Smooth rotation only (no movement influence)
             transform.rotation = Quaternion.RotateTowards(

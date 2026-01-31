@@ -23,6 +23,7 @@ namespace Assets.Script.Boss.State
 
         public void OnEnter()
         {
+            _animator.SetTrigger(BossStateControl.STUN);
             Helper.Log("Stun Enter");
             _currentCooldownTime = _defStunTime;
         }

@@ -2,6 +2,7 @@ using System;
 using Assets.Script.Boss.Attack;
 using Assets.Script.Boss.State;
 using Assets.Script.Interface;
+using Assets.Script.Utility;
 using Script.Boss.Health;
 using UnityEngine;
 
@@ -126,7 +127,7 @@ namespace Assets.Script.Boss
         {
             var t = Enum.GetNames(typeof(AttackState)).Length;
             _attackingState = (AttackState)UnityEngine.Random.Range(0, t);
-            //_attackingState = (AttackState)2;
+            //_attackingState = (AttackState)1;
         }
 
         public void ClearStun()
@@ -146,6 +147,7 @@ namespace Assets.Script.Boss
 
         public void Stun()
         {
+            Helper.Log("stun");
             _isStunned = true;
         }
 
