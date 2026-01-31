@@ -46,7 +46,7 @@ namespace Assets.Script.Projectile
             // Distance-based turn speed (closer = faster)
             float distance = toTarget.magnitude;
             Helper.Log($"dis {distance}");
-            float t = distance > 17? Mathf.InverseLerp(15, 0f, distance) : .5f;
+            float t = Mathf.InverseLerp(15, 0f, distance);
             float turnSpeed = Mathf.Lerp(rotationspeed, rotationspeed*5, t);
 
             // Smooth rotation only (no movement influence)
