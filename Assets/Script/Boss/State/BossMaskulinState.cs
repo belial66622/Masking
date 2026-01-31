@@ -11,6 +11,7 @@ namespace Assets.Script.Boss.State
         private IBossState bossState;
         private IAttack _attack;
         private Animator _animator;
+        private Animator _animatorhead;
         public BossMaskulinState(BossStateControl bossStateControl, IAttack attack, Animator animator, Animator head)
         {
             _bossStateControl = bossStateControl;

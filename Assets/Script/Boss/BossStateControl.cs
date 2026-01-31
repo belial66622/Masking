@@ -32,6 +32,7 @@ namespace Assets.Script.Boss
         public static int STUN = Animator.StringToHash("Stun");
         public static int DEATH = Animator.StringToHash("Death");
         public static int IDLE = Animator.StringToHash("Idle");
+        public static int FACEID = Animator.StringToHash("FaceID");
 
 
         private bool _isDead = false;
@@ -55,9 +56,9 @@ namespace Assets.Script.Boss
             _stateMachine = new StateMachine();
 
             var deadState = new BossDeadState(this, _animator);
-            var MaskerState = new BossMaskerState(this, _maskerAttack, _animator);
-            var MaskulinState = new BossMaskulinState(this, _maskulinAttack, _animator);
-            var MaskingState = new BossMaskingState(this, _maskingAttack, _animator);
+            var MaskerState = new BossMaskerState(this, _maskerAttack, _animator, _headAnimator);
+            var MaskulinState = new BossMaskulinState(this, _maskulinAttack, _animator, _headAnimator);
+            var MaskingState = new BossMaskingState(this, _maskingAttack, _animator, _headAnimator);
             var stunState = new BossStunState(this, _stunTime, _animator);
             var idleState = new BossIdleState(this, health, _attackCooldown, _animator);
 
