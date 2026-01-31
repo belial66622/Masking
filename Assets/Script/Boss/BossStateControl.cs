@@ -23,6 +23,7 @@ namespace Assets.Script.Boss
         [SerializeField] private float _stunTime;
         [SerializeField] private Transform _mulutProjectileLoc;
         [SerializeField] private Animator _animator;
+        [SerializeField] private AttackArea _attackArea;
 
         public static int MASKING = Animator.StringToHash("Masking");
         public static int MASKER = Animator.StringToHash("Masker");
@@ -179,6 +180,21 @@ namespace Assets.Script.Boss
             OnAttack?.Invoke();
         }
 
+        public void attack()
+        {
+            if (_attackArea.Attack(out Collider col))
+            {
+                if (col.TryGetComponent(out Ihealth ihealth))
+                {
+                    ihealth.OnDamage(1);
+                }
+            }
+            else 
+            {
+                Helper.Log("not found");
+            }
+
+        }
         #endregion
 
         public enum BossState

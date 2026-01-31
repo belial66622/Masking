@@ -1,4 +1,5 @@
-﻿using Assets.Script.Utility;
+﻿using Assets.Script.Boss;
+using Assets.Script.Utility;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
@@ -8,15 +9,17 @@ namespace Assets.Script.Projectile
     {
         [SerializeField] private float rotationspeed;
         [SerializeField] private float forwardSpeed;
-        Vector3 _target = Vector3.zero;
+        Vector3 _target = Vector3.zero; [SerializeField]
+        private BossStateControl _boss;
 
         float MaxRotationSpeed;
 
-        public override void SetProjectile(Vector3 position, Quaternion angle , Vector3 target)
+        public override void SetProjectile(Vector3 position, Quaternion angle, Vector3 target, BossStateControl boss)
         {
             transform.position = position;
             transform.rotation = angle;
             _target = target;
+            _boss = boss;
         }
 
         private void Update()
@@ -26,7 +29,8 @@ namespace Assets.Script.Projectile
             Rotate();
 
             if (Vector3.Distance(transform.position, _target) < .5f)
-            { 
+            {
+                _boss.attack();
                 Destroy(gameObject);
             }
         }
@@ -47,7 +51,7 @@ namespace Assets.Script.Projectile
             float distance = toTarget.magnitude;
             Helper.Log($"dis {distance}");
             float t = Mathf.InverseLerp(15, 0f, distance);
-            float turnSpeed = Mathf.Lerp(rotationspeed, rotationspeed*7, t);
+            float turnSpeed = Mathf.Lerp(rotationspeed, rotationspeed * 7, t);
 
             // Smooth rotation only (no movement influence)
             transform.rotation = Quaternion.RotateTowards(

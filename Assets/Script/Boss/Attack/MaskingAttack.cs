@@ -11,10 +11,12 @@ namespace Assets.Script.Boss.Attack
     {
         [SerializeField] Image image;
         [SerializeField] float intensity;
+        [SerializeField] float flashDur;
         public void Attack()
         {
             Helper.Log("maskerAttack");
-            StartCoroutine(flash(.5f));
+            StartCoroutine(flash(flashDur));
+            _bossStateControl.attack();
         }
 
 
