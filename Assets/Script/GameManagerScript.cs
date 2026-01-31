@@ -2,21 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Script.Boss.Health;
 
 public class GameManagerScript : MonoBehaviour
 {
     enum Action {Idle, Attack, Defense, Parry}
-    enum Result {Attack, Defense, Parry, Miss}
-    public TextMeshProUGUI resultText;
+    enum Result {Attack, Defense, Parry, Miss, PerfectAttack}
     Action player1 = Action.Idle;
     Action player2 = Action.Idle;
     float parryTime = 0.2f;
+    float perfectWindow = 0.2f;
     float p1DefenseTime;
     float p2DefenseTime;
     public VFXScript VFX;
     bool roundResolved = false;
     float p1ActionTime;
     float p2ActionTime;
+    public BossHealth Boss;
+    
 
     float connectWindow = 0.5f;
         
@@ -69,23 +72,46 @@ public class GameManagerScript : MonoBehaviour
         DefenseParry();
         if (player1 == Action.Attack && player2 == Action.Attack)
         {
-            resultText.text = "attack";
-            return Result.Attack;
+            if (timeDiff <= perfectWindow)  
+            {
+                PerfectAttackBoss();
+                return Result.PerfectAttack; 
+            }
+            else
+            {
+                AttackBoss();
+                return Result.Attack;
+            }
         }
         else if (player1 == Action.Parry && player2 == Action.Parry)
         {
-            resultText.text = "parry";
             return Result.Parry;
         }
         else if (player1 == Action.Defense && player2 == Action.Defense)
         {
-            resultText.text = "defense";
             return Result.Defense;
         }
         else
         {
-            resultText.text = "miss";
             return Result.Miss;
+        }
+    }
+
+    void AttackBoss()
+    {
+        if (Boss != null)
+        {
+            Boss.OnDamage(5);
+            Boss.OnPoiseDamage(5f); 
+        }
+    }
+
+    void PerfectAttackBoss()
+    {
+        if (Boss != null)
+        {
+            Boss.OnDamage(10);
+            Boss.OnPoiseDamage(10f); 
         }
     }
 
@@ -125,6 +151,5 @@ public class GameManagerScript : MonoBehaviour
         roundResolved = false;
         player1 = Action.Idle;
         player2 = Action.Idle;
-        resultText.text = "test:";
     }
 }

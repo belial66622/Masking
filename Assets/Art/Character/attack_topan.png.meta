@@ -96,10 +96,10 @@ TextureImporter:
       name: attack_topan_0
       rect:
         serializedVersion: 2
-        x: 9
+        x: 0
         y: 0
-        width: 40
-        height: 59
+        width: 61
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,10 +117,10 @@ TextureImporter:
       name: attack_topan_1
       rect:
         serializedVersion: 2
-        x: 72
+        x: 61
         y: 0
-        width: 48
-        height: 59
+        width: 61
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,10 +138,10 @@ TextureImporter:
       name: attack_topan_2
       rect:
         serializedVersion: 2
-        x: 132
+        x: 122
         y: 0
-        width: 51
-        height: 57
+        width: 61
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,10 +159,10 @@ TextureImporter:
       name: attack_topan_3
       rect:
         serializedVersion: 2
-        x: 193
+        x: 183
         y: 0
-        width: 51
-        height: 58
+        width: 61
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,10 +180,10 @@ TextureImporter:
       name: attack_topan_4
       rect:
         serializedVersion: 2
-        x: 254
+        x: 244
         y: 0
-        width: 51
-        height: 58
+        width: 61
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,10 +201,10 @@ TextureImporter:
       name: attack_topan_5
       rect:
         serializedVersion: 2
-        x: 314
+        x: 305
         y: 0
-        width: 52
-        height: 58
+        width: 61
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,10 +222,10 @@ TextureImporter:
       name: attack_topan_6
       rect:
         serializedVersion: 2
-        x: 378
+        x: 366
         y: 0
-        width: 34
-        height: 59
+        width: 61
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
