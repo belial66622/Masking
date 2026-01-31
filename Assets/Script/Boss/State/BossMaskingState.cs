@@ -10,7 +10,8 @@ namespace Assets.Script.Boss.State
         private IBossState bossState;
         private IAttack _attack;
         private Animator _animator;
-        public BossMaskingState(BossStateControl bossStateControl, IAttack attack, Animator animator)
+        private Animator _animatorhead;
+        public BossMaskingState(BossStateControl bossStateControl, IAttack attack, Animator animator, Animator head)
         {
             _bossStateControl = bossStateControl;
             bossState = bossStateControl;
