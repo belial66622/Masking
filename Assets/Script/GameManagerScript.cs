@@ -14,7 +14,12 @@ public class GameManagerScript : MonoBehaviour
     float p1DefenseTime;
     float p2DefenseTime;
     public VFXScript VFX;
-    
+    bool roundResolved = false;
+    float p1ActionTime;
+    float p2ActionTime;
+
+    float connectWindow = 0.5f;
+        
 
     // Update is called once per frame
     void Update()
@@ -23,10 +28,12 @@ public class GameManagerScript : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.S))
             player1 = Action.Attack;
+            p1ActionTime = Time.time;
             if (Input.GetKeyDown(KeyCode.D))
             {
                 player1 = Action.Defense;
                 p1DefenseTime = Time.time;
+                p1ActionTime = Time.time;
             }
         }
 
@@ -34,24 +41,31 @@ public class GameManagerScript : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.J))
             player2 = Action.Attack;
+            p2ActionTime = Time.time;
             if (Input.GetKeyDown(KeyCode.K))
             {
                 player2 = Action.Defense;
                 p2DefenseTime = Time.time;
+                p2ActionTime = Time.time;
             }
         }
 
-        if (player1 != Action.Idle && player2 != Action.Idle)
+        if (!roundResolved && player1 != Action.Idle && player2 != Action.Idle)
         {
+            roundResolved = true;
             Result result = Battle();
             PlayBattleVFX(result);
-            Invoke(nameof(ResetRound), 1.5f);
+            Invoke(nameof(ResetRound), 1f);
         }
         
     }
 
     Result Battle()
     {
+        float timeDiff = Mathf.Abs(p1ActionTime - p2ActionTime);
+
+        if (timeDiff > connectWindow)
+            return Result.Miss;
         DefenseParry();
         if (player1 == Action.Attack && player2 == Action.Attack)
         {
@@ -108,6 +122,7 @@ public class GameManagerScript : MonoBehaviour
 
     void ResetRound()
     {
+        roundResolved = false;
         player1 = Action.Idle;
         player2 = Action.Idle;
         resultText.text = "test:";

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a83dca8e61f5abf49a3bbde2ef012246
+guid: 68c53b1671a9cff4eb4e3e4151211ba4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -93,13 +93,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: attackvfx_0
+      name: parryvfx_0
       rect:
         serializedVersion: 2
-        x: 69
-        y: 84
-        width: 55
-        height: 38
+        x: 96
+        y: 82
+        width: 99
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -107,20 +107,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2fc130600cc03549a4d431208b9c7a6
-      internalID: 2017479777
+      spriteID: 533c699f372aed6469f707b31c9d7fc0
+      internalID: 43579293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attackvfx_1
+      name: parryvfx_1
       rect:
         serializedVersion: 2
-        x: 267
-        y: 73
-        width: 58
-        height: 60
+        x: 350
+        y: 75
+        width: 159
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,20 +128,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c716cf22f57813c43a9e2a394d6d8d36
-      internalID: -1247449072
+      spriteID: 89b8bb75baa82a74981e76b82f132b16
+      internalID: -1072401388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attackvfx_2
+      name: parryvfx_2
       rect:
         serializedVersion: 2
-        x: 443
-        y: 35
-        width: 120
-        height: 131
+        x: 620
+        y: 59
+        width: 195
+        height: 164
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 195c7976497439d4ea99d5f8e20d9b10
-      internalID: -1651102095
+      spriteID: 5251574acac946f4aacf689679c7aa0e
+      internalID: 502750832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attackvfx_3
+      name: parryvfx_3
       rect:
         serializedVersion: 2
-        x: 618
-        y: 34
-        width: 174
-        height: 151
+        x: 892
+        y: 29
+        width: 254
+        height: 217
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,20 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c1846a3d85a4ed49a14fca585f7773b
-      internalID: 1617953282
+      spriteID: 3bcb8cd2fa8703243b72db8298a30d04
+      internalID: 191122278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attackvfx_4
+      name: parryvfx_4
       rect:
         serializedVersion: 2
-        x: 815
-        y: 26
-        width: 173
-        height: 156
+        x: 1172
+        y: 7
+        width: 274
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,41 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33a2d572cc23529478865f18c1e46763
-      internalID: -608042716
+      spriteID: 13444d82965e8b04985a94b799c5ed1b
+      internalID: 1289216688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attackvfx_5
+      name: parryvfx_5
       rect:
         serializedVersion: 2
-        x: 997
-        y: 9
-        width: 207
-        height: 191
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5be919ef21ea3884fa4c1ce6b106ae62
-      internalID: -1753953965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attackvfx_6
-      rect:
-        serializedVersion: 2
-        x: 1213
+        x: 1466
         y: 0
-        width: 187
-        height: 200
+        width: 263
+        height: 287
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,8 +212,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4c1717fb452d6c4abeff32b78a512af
-      internalID: 2029994560
+      spriteID: 59b673fce99adf944aa7f3cd342c6838
+      internalID: -850885640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parryvfx_6
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 7
+        width: 279
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca4c3bb01cf7d14faab325444cbd895
+      internalID: 936974002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parryvfx_7
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 0
+        width: 276
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8bb53b3fd157942a93ec0a48f9bfc2
+      internalID: 610571618
       vertices: []
       indices: 
       edges: []
@@ -242,7 +263,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7d705f21a71f65e4bac7e07a79c5166e
+    spriteID: d8e24ae9a23d06540981d2bb8e0d0c8b
     internalID: 0
     vertices: []
     indices: 
@@ -250,13 +271,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      attackvfx_0: 2017479777
-      attackvfx_1: -1247449072
-      attackvfx_2: -1651102095
-      attackvfx_3: 1617953282
-      attackvfx_4: -608042716
-      attackvfx_5: -1753953965
-      attackvfx_6: 2029994560
+      parryvfx_0: 43579293
+      parryvfx_1: -1072401388
+      parryvfx_2: 502750832
+      parryvfx_3: 191122278
+      parryvfx_4: 1289216688
+      parryvfx_5: -850885640
+      parryvfx_6: 936974002
+      parryvfx_7: 610571618
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

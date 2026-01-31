@@ -6,6 +6,9 @@ public class VFXScript : MonoBehaviour
 {
     public Animator anim;
     // Start is called before the first frame update
+    void Start() {
+        GetComponent<SpriteRenderer>().enabled = false;
+    }
     void Awake()
     {
         anim = GetComponent<Animator>();
@@ -13,16 +16,20 @@ public class VFXScript : MonoBehaviour
 
     public void PlayAttack()
     {
+        GetComponent<SpriteRenderer>().enabled = true;
+        anim.ResetTrigger("Attack");
         anim.SetTrigger("Attack");
     }
 
     public void PlayDefense()
     {
+        anim.ResetTrigger("Defense");
         anim.SetTrigger("Defense");
     }
 
     public void PlayParry()
     {
+        anim.ResetTrigger("Parry");
         anim.SetTrigger("Parry");
     }
 
