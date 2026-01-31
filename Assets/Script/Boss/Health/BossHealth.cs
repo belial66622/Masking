@@ -15,11 +15,9 @@ namespace Script.Boss.Health
 
         private float _currentPoise;
 
-        [SerializeField] private Material _currentMaterial;
-
         [SerializeField] private Material _damagedMaterial;
 
-        [SerializeField] private MeshRenderer _currentMesh;
+        [SerializeField] private BossMaterialControl _currentMesh;
 
         private Coroutine _coroutine;
         #endregion
@@ -35,11 +33,11 @@ namespace Script.Boss.Health
         {
             if (damage > 0)
             {
-                ChangeMat(_currentMesh, _currentMaterial, _damagedMaterial);
+                ChangeMat(_currentMesh, _damagedMaterial);
             }
             ChangeHealth(damage);
             OnHealthChange?.Invoke(_currentHealth);
-            if (_currentHealth == 0)
+            if (_currentHealth <= 0)
             {
                 OnDeath?.Invoke();
             }
@@ -63,9 +61,10 @@ namespace Script.Boss.Health
             ChangePoise(damage);
             OnPoiseChange?.Invoke(_currentPoise);
 
-            if (_currentPoise == 0)
+            if (_currentPoise <= 0)
             {
                 OnPoiseDepleted?.Invoke();
+                SetPoise();
             }
         }
 
@@ -87,14 +86,14 @@ namespace Script.Boss.Health
             _currentPoise = Mathf.Clamp(_currentPoise - damage, 0, Maxpoise);
         }
 
-        private void ChangeMat(MeshRenderer mesh, Material from, Material to)
+        private void ChangeMat(BossMaterialControl mesh, Material to)
         {
-            _currentMesh.material = to;
+            mesh.changeMat(to);
             if (_coroutine == null)
             {
                 _coroutine = StartCoroutine(Helper.delay(() =>
                 {
-                    _currentMesh.material = from;
+                    mesh.changeMat();
                     _coroutine = null;
                 },.1f));
             }

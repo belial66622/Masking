@@ -2,6 +2,7 @@ using System;
 using Assets.Script.Boss.Attack;
 using Assets.Script.Boss.State;
 using Assets.Script.Interface;
+using Assets.Script.Utility;
 using Script.Boss.Health;
 using UnityEngine;
 
@@ -21,6 +22,16 @@ namespace Assets.Script.Boss
         [SerializeField] private float _attackCooldown;
         [SerializeField] private float _stunTime;
         [SerializeField] private Transform _mulutProjectileLoc;
+        [SerializeField] private Animator _animator;
+        [SerializeField] private AttackArea _attackArea;
+
+        public static int MASKING = Animator.StringToHash("Masking");
+        public static int MASKER = Animator.StringToHash("Masker");
+        public static int MASKULIN = Animator.StringToHash("Maskulin");
+        public static int STUN = Animator.StringToHash("Stun");
+        public static int DEATH = Animator.StringToHash("Death");
+        public static int IDLE = Animator.StringToHash("Idle");
+
 
         private bool _isDead = false;
         private bool _isStunned;
@@ -33,6 +44,7 @@ namespace Assets.Script.Boss
         [SerializeField]
         private MaskulinAttack _maskulinAttack;
 
+
         private void Update() => _stateMachine.Tick();
         // Update is called once per frame
         #region Mono
@@ -41,12 +53,12 @@ namespace Assets.Script.Boss
             health.EventDelete();
             _stateMachine = new StateMachine();
 
-            var deadState = new BossDeadState(this);
-            var MaskerState = new BossMaskerState(this, _maskerAttack);
-            var MaskulinState = new BossMaskulinState(this, _maskulinAttack);
-            var MaskingState = new BossMaskingState(this, _maskingAttack);
-            var stunState = new BossStunState(this, _stunTime);
-            var idleState = new BossIdleState(this, health, _attackCooldown);
+            var deadState = new BossDeadState(this, _animator);
+            var MaskerState = new BossMaskerState(this, _maskerAttack, _animator);
+            var MaskulinState = new BossMaskulinState(this, _maskulinAttack, _animator);
+            var MaskingState = new BossMaskingState(this, _maskingAttack, _animator);
+            var stunState = new BossStunState(this, _stunTime, _animator);
+            var idleState = new BossIdleState(this, health, _attackCooldown, _animator);
 
             //idle to skillstate
             At(idleState, MaskerState, CanAttackMasker());
@@ -103,6 +115,10 @@ namespace Assets.Script.Boss
         #endregion
 
         #region IBossState
+
+        public event Action DoneAttack;
+        public event Action OnAttack;
+
         public void CanAttack()
         {
             _isCooldownAttack = false;
@@ -111,8 +127,8 @@ namespace Assets.Script.Boss
         public void ChooseAttack()
         {
             var t = Enum.GetNames(typeof(AttackState)).Length;
-            //_attackingState = (AttackState)UnityEngine.Random.Range(0, t);
-            _attackingState = (AttackState)0;
+            _attackingState = (AttackState)UnityEngine.Random.Range(0, t);
+            //_attackingState = (AttackState)1;
         }
 
         public void ClearStun()
@@ -132,6 +148,7 @@ namespace Assets.Script.Boss
 
         public void Stun()
         {
+            Helper.Log("stun");
             _isStunned = true;
         }
 
@@ -151,6 +168,32 @@ namespace Assets.Script.Boss
         public Transform GetPlayer()
         {
             return _player.transform;
+        }
+
+        public void AttackAnimationFinished()
+        {
+            DoneAttack?.Invoke();
+        }
+
+        public void ActivateAttack()
+        {
+            OnAttack?.Invoke();
+        }
+
+        public void attack()
+        {
+            if (_attackArea.Attack(out Collider col))
+            {
+                if (col.TryGetComponent(out Ihealth ihealth))
+                {
+                    ihealth.OnDamage(1);
+                }
+            }
+            else 
+            {
+                Helper.Log("not found");
+            }
+
         }
         #endregion
 

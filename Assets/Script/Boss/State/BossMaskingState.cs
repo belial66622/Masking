@@ -1,5 +1,6 @@
 ﻿using Assets.Script.Interface;
 using Assets.Script.Utility;
+using UnityEngine;
 
 namespace Assets.Script.Boss.State
 {
@@ -8,25 +9,27 @@ namespace Assets.Script.Boss.State
         private BossStateControl _bossStateControl;
         private IBossState bossState;
         private IAttack _attack;
-        public BossMaskingState(BossStateControl bossStateControl, IAttack attack)
+        private Animator _animator;
+        public BossMaskingState(BossStateControl bossStateControl, IAttack attack, Animator animator)
         {
             _bossStateControl = bossStateControl;
             bossState = bossStateControl;
             _attack = attack;
+            _animator = animator;
         }
 
         public void OnEnter()
         {
-            Helper.Log("Masking enter"); _attack.Attack();
-            _bossStateControl.StartCoroutine(Helper.delay(
-                () =>
-                {
-                    bossState.Cooldown();
-                },1));
+            bossState.DoneAttack += AttackFinished;
+            bossState.OnAttack += Attack;
+            Helper.Log("Masking enter");
+            _animator.SetTrigger(BossStateControl.MASKING);
         }
 
         public void OnExit()
         {
+            bossState.DoneAttack -= AttackFinished;
+            bossState.OnAttack -= Attack;
             Helper.Log("Masking Exit");
         }
 
@@ -35,5 +38,13 @@ namespace Assets.Script.Boss.State
             
         }
 
+        private void AttackFinished()
+        {
+            bossState.Cooldown();
+        }
+        private void Attack()
+        {
+            _attack.Attack();
+        }
     }
 }
