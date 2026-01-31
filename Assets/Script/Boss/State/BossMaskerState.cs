@@ -11,21 +11,23 @@ namespace Assets.Script.Boss.State
         private IAttack _attack;
         private Animator _animator;
         private Animator _animatorhead;
-        public BossMaskerState(BossStateControl bossStateControl , IAttack attack, Animator animator, Animator head)
+        public BossMaskerState(BossStateControl bossStateControl, IAttack attack, Animator animator, Animator head)
         {
             _bossStateControl = bossStateControl;
             bossState = bossStateControl;
             _attack = attack;
             _animator = animator;
+            _animatorhead = head;
         }
 
         public void OnEnter()
         {
             bossState.DoneAttack += AttackFinished;
             bossState.OnAttack += Attack;
-            Helper.Log("Masker enter"); 
-
-            _animator.SetTrigger(BossStateControl.MASKER);
+            Helper.Log("Masker enter");
+            _animatorhead.SetInteger(BossStateControl.FACEID, 0);
+            _bossStateControl.StartCoroutine(Helper.delay(
+                () => { _animator.SetTrigger(BossStateControl.MASKER); }, 1));
         }
 
         public void OnExit()
@@ -37,10 +39,10 @@ namespace Assets.Script.Boss.State
 
         public void Tick()
         {
-            
+
         }
 
-        private void AttackFinished() 
+        private void AttackFinished()
         {
             bossState.Cooldown();
         }

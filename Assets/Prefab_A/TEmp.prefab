@@ -144,8 +144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 590a5b84c39c0d8459e2dbb33ad28f0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationspeed: 10
+  rotationspeed: 15
   forwardSpeed: 1
+  _boss: {fileID: 0}
 --- !u!96 &925285111061601414
 TrailRenderer:
   serializedVersion: 2
