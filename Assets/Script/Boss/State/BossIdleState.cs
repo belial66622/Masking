@@ -16,13 +16,15 @@ namespace Assets.Script.Boss.State
         private float _defCooldownTime;
 
         private float _currentCooldownTime;
-        public BossIdleState(BossStateControl bossStateControl, Ihealth health , float cooldownTime)
+        private Animator _animator;
+        public BossIdleState(BossStateControl bossStateControl, Ihealth health , float cooldownTime, Animator animator)
         {
             _bossStateControl = bossStateControl;
             _bossState = bossStateControl;
             _health = health;
             _defCooldownTime = cooldownTime;
             _health.OnHealthChange += HealthChange;
+            _animator = animator;
         }
 
         public void OnEnter()
@@ -30,6 +32,7 @@ namespace Assets.Script.Boss.State
             Helper.Log($"Idle Enter {_defCooldownTime}");
             _bossState.ChooseAttack();
             _currentCooldownTime = _defCooldownTime;
+            _animator.SetTrigger(BossStateControl.IDLE);
         }
 
         public void OnExit()

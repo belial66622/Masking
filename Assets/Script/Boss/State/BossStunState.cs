@@ -12,11 +12,13 @@ namespace Assets.Script.Boss.State
         private float _defStunTime;
 
         private float _currentCooldownTime;
-        public BossStunState(BossStateControl bossStateControl,float cooldownTime)
+        private Animator _animator;
+        public BossStunState(BossStateControl bossStateControl,float cooldownTime, Animator animator)
         {
             _bossStateControl = bossStateControl;
             _defStunTime = cooldownTime;
             _bossState = bossStateControl;
+            _animator = animator;
         }
 
         public void OnEnter()

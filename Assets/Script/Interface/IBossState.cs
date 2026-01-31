@@ -8,6 +8,9 @@ namespace Assets.Script.Interface
 {
     internal interface IBossState
     {
+        public event Action DoneAttack;
+
+        public event Action OnAttack;
         public void Dead();
         public void Cooldown();
         public void Stun();
