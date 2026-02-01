@@ -10,11 +10,13 @@ namespace Assets.Script.Boss.Attack
         private float _cameraShakeDuration;
         [SerializeField]
         private float _cameraMagnitude;
+        [SerializeField]
+        private float _damage;
         public void Attack()
         {
             Camera.main.GetComponent<IShake>().ShakeCamera(_cameraShakeDuration, _cameraMagnitude);
             Helper.Log("MaskulinAttack");
-            _bossStateControl.attack();
+            _bossStateControl.attack(_damage);
         }
     }
 }

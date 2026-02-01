@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace Assets.Script
 {
-    internal class AnimatorReceiver :MonoBehaviour
+    internal class AnimatorReceiver : MonoBehaviour
     {
         [SerializeField]
         BossStateControl bossStateControl;
@@ -22,5 +22,13 @@ namespace Assets.Script
         {
             bossStateControl?.ActivateAttack();
         }
+
+        public void AdditionalSound()
+        {
+            bossStateControl?.ActivateSound();
+        }
+
+        public void AdditionalAnimation()
+        {}
     }
 }

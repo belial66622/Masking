@@ -17,7 +17,8 @@ namespace Assets.Script.Boss.State
             _bossStateControl = bossStateControl;
             bossState = bossStateControl;
             _attack = attack;
-            _animator = animator; 
+            _animator = animator;
+            _animatorhead = head;
         }
 
         public void OnEnter()
@@ -25,8 +26,10 @@ namespace Assets.Script.Boss.State
             bossState.DoneAttack += AttackFinished;
             bossState.OnAttack += Attack;
             Helper.Log("Maskulin enter");
-            
-            _animator.SetTrigger(BossStateControl.MASKULIN);
+            _animatorhead.SetInteger(BossStateControl.FACEID, 2);
+
+            _bossStateControl.StartCoroutine(Helper.delay(
+                () => { _animator.SetTrigger(BossStateControl.MASKULIN); }, 1));
         }
 
         public void OnExit()
@@ -38,7 +41,7 @@ namespace Assets.Script.Boss.State
 
         public void Tick()
         {
-            
+
         }
 
         private void AttackFinished()

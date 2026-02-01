@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Assets.Script.Utility;
 using UnityEngine;
 
 public class VFXScript : MonoBehaviour
@@ -7,7 +8,7 @@ public class VFXScript : MonoBehaviour
     public Animator anim;
     // Start is called before the first frame update
     void Start() {
-        GetComponent<SpriteRenderer>().enabled = false;
+       // GetComponent<SpriteRenderer>().enabled = false;
     }
     void Awake()
     {
@@ -16,21 +17,22 @@ public class VFXScript : MonoBehaviour
 
     public void PlayAttack()
     {
-        GetComponent<SpriteRenderer>().enabled = true;
+        //GetComponent<SpriteRenderer>().enabled = true;
+
         anim.ResetTrigger("Attack");
         anim.SetTrigger("Attack");
     }
 
     public void PlayDefense()
     {
-        GetComponent<SpriteRenderer>().enabled = true;
+       // GetComponent<SpriteRenderer>().enabled = true;
         anim.ResetTrigger("Defense");
         anim.SetTrigger("Defense");
     }
 
     public void PlayParry()
     {
-        GetComponent<SpriteRenderer>().enabled = true;
+       // GetComponent<SpriteRenderer>().enabled = true;
         anim.ResetTrigger("Parry");
         anim.SetTrigger("Parry");
     }

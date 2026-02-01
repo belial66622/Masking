@@ -5,6 +5,7 @@ using UnityEngine;
 using NaughtyAttributes;
 using Assets.Script.Utility;
 using UnityEngine.UI;
+using Assets.Script;
 
 namespace Script.Boss.Health
 {
@@ -37,6 +38,7 @@ namespace Script.Boss.Health
             if (damage > 0)
             {
                 ChangeMat(_currentMesh, _damagedMaterial);
+                SoundPlay.Instance.PlaySound("BossHit");
             }
             ChangeHealth(damage);
             _healthHud.fillAmount = _currentHealth/MaxHealth;

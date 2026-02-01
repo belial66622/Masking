@@ -11,6 +11,7 @@ namespace Assets.Script.Boss.State
         public void OnEnter()
         {
             Helper.Log("dead"); 
+            SoundPlay.Instance.PlaySound("Death");
             _animator.SetTrigger(BossStateControl.DEATH);
         }
 

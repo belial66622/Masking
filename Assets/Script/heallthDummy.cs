@@ -29,29 +29,38 @@ namespace Assets.Script
             SetHealth();
         }
 
-       
+
 
         public void OnDamage(float damage)
         {
             float finalDamage = damage;
-            bossDamage.BossAttack();
-        switch (blockType)
-        {
-            case BlockType.Perfect:
-                Helper.Log("Perfect Block!");
-                finalDamage = 0f;
-                break;
+            bossDamage?.BossAttack();
+            StartCoroutine(Helper.delay(
+                () =>
+                {
+                    switch (blockType)
+                    {
+                        case BlockType.Perfect:
+                            Helper.Log("Perfect Block!");
+                            finalDamage = 0f;
+                            break;
 
-            case BlockType.Normal:
-                Helper.Log("Block!");
-                finalDamage *= BlockReduction;
-                break;
-        }
-            currentHealth -= finalDamage;
-            currentHealth = Mathf.Clamp(currentHealth, 0, MaxHealth);
-            healthBar.fillAmount = currentHealth/MaxHealth;
-            OnHealthChange?.Invoke(currentHealth);
-            Helper.Log("asda");
+                        case BlockType.Normal:
+                            Helper.Log("Block!");
+                            finalDamage *= BlockReduction;
+                            break;
+                    }
+                    if (finalDamage > 0)
+                    {
+                        SoundPlay.Instance.PlaySound("PlayerHit");
+                    }
+                    currentHealth -= finalDamage;
+                    currentHealth = Mathf.Clamp(currentHealth, 0, MaxHealth);
+                    healthBar.fillAmount = currentHealth / MaxHealth;
+                    OnHealthChange?.Invoke(currentHealth);
+                },bossDamage.parryTime));
+            
+            //Helper.Log("asda");
            
         }
         public void SetBlock(BlockType type)
