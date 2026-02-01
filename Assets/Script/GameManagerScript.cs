@@ -15,7 +15,7 @@ public class GameManagerScript : MonoBehaviour
     Action player2 = Action.Idle;
     public float parryTime = 0.2f;
     float perfectWindow = 0.2f;
-    float perfectBlockWindow = 1f;
+    float perfectBlockWindow = 0.2f;
     float p1DefenseTime;
     float p2DefenseTime;
     public VFXScript VFX;
@@ -26,7 +26,7 @@ public class GameManagerScript : MonoBehaviour
     public heallthDummy playerHealth;
     float bossAttackTime;
     bool bossIsAttacking;
-    
+    public float bossWindupTime = 1f;
 
     float connectWindow = 0.5f;
         
@@ -100,11 +100,12 @@ public class GameManagerScript : MonoBehaviour
                 ParryAttack();
                 return Result.Parry;
             }
-            if (DefenseTiming())
+            if (timeDiff <= perfectBlockWindow)
             {
                 playerHealth.SetBlock(heallthDummy.BlockType.Perfect);
-                playerHealth.GrantShield();
+                // playerHealth.GrantShield();
                 return Result.Defense;
+                
             }
             else 
             {
@@ -131,11 +132,13 @@ public class GameManagerScript : MonoBehaviour
 
     bool DefenseTiming()
     {
-        
-        float d1 = Mathf.Abs(p1ActionTime - bossAttackTime);
-        float d2 = Mathf.Abs(p2ActionTime - bossAttackTime);
+        if (!bossIsAttacking)
+            return false;
 
-        
+        float d1 = bossAttackTime - p1ActionTime; // positive if player pressed before attack
+        float d2 = bossAttackTime - p2ActionTime;
+
+        // must be pressed before the attack, but within the perfectBlockWindow
         return d1 >= 0f && d1 <= perfectBlockWindow &&
             d2 >= 0f && d2 <= perfectBlockWindow;
     }
