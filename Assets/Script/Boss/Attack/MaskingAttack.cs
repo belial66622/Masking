@@ -13,11 +13,16 @@ namespace Assets.Script.Boss.Attack
         [SerializeField] float intensity;
         [SerializeField] float flashDur;
         [SerializeField] float _damage;
+        [SerializeField] MaskingProj damage;
+        [SerializeField] Transform posti;
+
         public void Attack()
         {
             Helper.Log("maskerAttack");
-            StartCoroutine(flash(flashDur));
-            _bossStateControl.attack(_damage);
+            var proj = Instantiate(damage);
+            proj.SetProjectile(posti.position, Quaternion.identity, _bossStateControl.GetPlayer().position, _bossStateControl);
+            //StartCoroutine(flash(flashDur));
+            //_bossStateControl.attack(_damage);
         }
 
 

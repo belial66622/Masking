@@ -29,6 +29,8 @@ namespace Assets.Script
         }
 
         public void AdditionalAnimation()
-        {}
+        {
+            bossStateControl?.ActivateAnimation();
+        }
     }
 }
