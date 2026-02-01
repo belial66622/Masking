@@ -1,6 +1,7 @@
 ﻿using System;
 using Assets.Script.Utility;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Assets.Script
@@ -67,6 +68,10 @@ namespace Assets.Script
                     currentHealth = Mathf.Clamp(currentHealth, 0, MaxHealth);
                     healthBar.fillAmount = currentHealth / MaxHealth;
                     OnHealthChange?.Invoke(currentHealth);
+                    if (currentHealth == 0)
+                    {
+                        SceneManager.LoadScene(1);
+                    }
                 },bossDamage.parryTime));
             
             //Helper.Log("asda");

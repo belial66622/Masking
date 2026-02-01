@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Assets.Script;
 using Assets.Script.Utility;
 using UnityEngine;
 
@@ -21,6 +22,7 @@ public class VFXScript : MonoBehaviour
 
         anim.ResetTrigger("Attack");
         anim.SetTrigger("Attack");
+        SoundPlay.Instance.PlaySound("Attack");
     }
 
     public void PlayDefense()
@@ -28,6 +30,7 @@ public class VFXScript : MonoBehaviour
        // GetComponent<SpriteRenderer>().enabled = true;
         anim.ResetTrigger("Defense");
         anim.SetTrigger("Defense");
+        SoundPlay.Instance.PlaySound("Defense");
     }
 
     public void PlayParry()
@@ -35,6 +38,7 @@ public class VFXScript : MonoBehaviour
        // GetComponent<SpriteRenderer>().enabled = true;
         anim.ResetTrigger("Parry");
         anim.SetTrigger("Parry");
+        SoundPlay.Instance.PlaySound("Parry");
     }
 
     // Update is called once per frame

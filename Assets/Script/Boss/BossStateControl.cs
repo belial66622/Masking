@@ -5,6 +5,7 @@ using Assets.Script.Interface;
 using Assets.Script.Utility;
 using Script.Boss.Health;
 using UnityEngine;
+using UnityEngine.Video;
 
 namespace Assets.Script.Boss
 {
@@ -25,6 +26,9 @@ namespace Assets.Script.Boss
         [SerializeField] private Animator _animator;
         [SerializeField] private AttackArea _attackArea;
         [SerializeField] private Animator _headAnimator;
+        [HideInInspector] public bool start;
+        [SerializeField] VideoControl _videoPlayer;
+
 
         public static int MASKING = Animator.StringToHash("Masking");
         public static int MASKER = Animator.StringToHash("Masker");
@@ -65,6 +69,9 @@ namespace Assets.Script.Boss
             var MaskingState = new BossMaskingState(this, _maskingAttack, _animator, _headAnimator);
             var stunState = new BossStunState(this, _stunTime, _animator);
             var idleState = new BossIdleState(this, health, _attackCooldown, _animator);
+            var startState = new BossStartState();
+
+            At(startState, idleState, IsStart());
 
             //idle to skillstate
             At(idleState, MaskerState, CanAttackMasker());
@@ -90,7 +97,7 @@ namespace Assets.Script.Boss
 
             health.SetHealth();
             health.SetPoise();
-            _stateMachine.SetState(idleState);
+            _stateMachine.SetState(startState);
 
             void At(IState to, IState from, Func<bool> condition) => _stateMachine.AddTransition(to, from, condition);
 
@@ -102,7 +109,8 @@ namespace Assets.Script.Boss
             Func<bool> IsStunned() => () => _isStunned;
             Func<bool> StunFinish() => () => !_isStunned;
             Func<bool> IsIdle() => () => _isCooldownAttack;
-            Func<bool> IsDead() => () => _isDead;
+            Func<bool> IsDead() => () => _isDead;            
+            Func<bool> IsStart() => () => start;
 
 
         }
@@ -133,8 +141,8 @@ namespace Assets.Script.Boss
         public void ChooseAttack()
         {
             var t = Enum.GetNames(typeof(AttackState)).Length;
-            //_attackingState = (AttackState)UnityEngine.Random.Range(0, t);
-            _attackingState = (AttackState)2;
+            _attackingState = (AttackState)UnityEngine.Random.Range(0, t);
+            //_attackingState = (AttackState)2;
         }
 
         public void ClearStun()
@@ -210,6 +218,12 @@ namespace Assets.Script.Boss
                 Helper.Log("not found");
             }
 
+        }
+
+        public void Death()
+        {
+            //Menang
+            _videoPlayer.Win();
         }
         #endregion
 

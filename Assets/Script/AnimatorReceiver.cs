@@ -32,5 +32,10 @@ namespace Assets.Script
         {
             bossStateControl?.ActivateAnimation();
         }
+
+        public void Death()
+        { 
+            bossStateControl?.Death();
+        }
     }
 }

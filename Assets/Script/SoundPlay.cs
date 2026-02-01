@@ -19,6 +19,10 @@ namespace Assets.Script
         [SerializeField]
         private AudioSource AudioSource;
 
+        [SerializeField]
+        private AudioSource bgm;
+
+
         private void Awake()
         {
             // If an instance already exists and it's not this one, destroy this duplicate
@@ -39,9 +43,17 @@ namespace Assets.Script
         public void PlaySound(string name)
         {
             var audio = AudioFile.Find(x => x.name == name);
-            if(audio == null) return;
+            if (audio == null) return;
             AudioSource.PlayOneShot(audio.audioClip);
         }
+
+        public void PlayBGM()
+        {
+            bgm.Play();
+        }
+
+        public void StopBGM()
+        { bgm.Stop(); }
     }
 
     [Serializable]
