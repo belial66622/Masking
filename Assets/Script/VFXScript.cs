@@ -23,12 +23,14 @@ public class VFXScript : MonoBehaviour
 
     public void PlayDefense()
     {
+        GetComponent<SpriteRenderer>().enabled = true;
         anim.ResetTrigger("Defense");
         anim.SetTrigger("Defense");
     }
 
     public void PlayParry()
     {
+        GetComponent<SpriteRenderer>().enabled = true;
         anim.ResetTrigger("Parry");
         anim.SetTrigger("Parry");
     }

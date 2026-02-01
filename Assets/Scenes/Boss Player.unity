@@ -1279,6 +1279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VFX: {fileID: 872213832}
   Boss: {fileID: 1694296671}
+  playerHealth: {fileID: 1757690845}
 --- !u!4 &1674276458
 Transform:
   m_ObjectHideFlags: 0
@@ -1497,7 +1498,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ceaeb75569b63c4d9937aacf1019ab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MaxHealth>k__BackingField: 50
+  bossDamage: {fileID: 1674276457}
+  <MaxHealth>k__BackingField: 100
   healthBar: {fileID: 573262524}
 --- !u!65 &1757690846
 BoxCollider:
