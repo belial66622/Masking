@@ -179,5 +179,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forwardSpeed: 20
   _boss: {fileID: 0}
-  _damage: 12
+  _damage: 25
   _projAnim: {fileID: 5830004889281797020}
