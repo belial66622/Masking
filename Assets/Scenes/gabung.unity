@@ -377,6 +377,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5473491724727338483, guid: 4d6e03e2dbcf31541a75faca522c191d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.00016017667
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473491724727338483, guid: 4d6e03e2dbcf31541a75faca522c191d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.004322071
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6e03e2dbcf31541a75faca522c191d, type: 3}
 --- !u!95 &333325567 stripped
@@ -641,112 +651,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.61, y: 0.68, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &464934685
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 464934686}
-  - component: {fileID: 464934688}
-  - component: {fileID: 464934687}
-  m_Layer: 0
-  m_Name: maskking_attack_0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &464934686
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 464934685}
-  m_LocalRotation: {x: 0, y: 0.2331059, z: 0, w: 0.9724514}
-  m_LocalPosition: {x: -1.6, y: 0, z: 0}
-  m_LocalScale: {x: 3.21, y: 3.21, z: 3.21}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 642271631}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 26.96, z: 0}
---- !u!95 &464934687
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 464934685}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9d9a3b605ff42fc43af36ce22204a72a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!212 &464934688
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 464934685}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: -838411468, guid: 4a60a629077a03e40ac529a0a4aa3291, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 2.2755556, y: 1.28}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &500493227
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,11 +810,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551310268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.762, z: 1.621}
+  m_LocalPosition: {x: 1.731, y: 2.18, z: 1.069}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 642271631}
+  m_Children: []
   m_Father: {fileID: 2045566827}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1100,38 +1003,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638899848}
   m_CullTransparentMesh: 1
---- !u!1 &642271630
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 642271631}
-  m_Layer: 0
-  m_Name: Proj
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &642271631
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642271630}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 464934686}
-  m_Father: {fileID: 551310269}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &733828565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,6 +1314,10 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 3195fdaa271f4124490e9c5feb684b03, type: 3}
   - name: Scream
     audioClip: {fileID: 8300000, guid: b7d2a0ea211d0cb4798d888be14d42c8, type: 3}
+  - name: Maskulin
+    audioClip: {fileID: 8300000, guid: 6c4acb2a361bf8b46948cf78966cb5ef, type: 3}
+  - name: Masking
+    audioClip: {fileID: 8300000, guid: 9c64d7885d8875b488a9d7ecd80ceef0, type: 3}
   AudioSource: {fileID: 1055727063}
 --- !u!4 &1055727062
 Transform:
@@ -2009,6 +1884,8 @@ MonoBehaviour:
   intensity: 1
   flashDur: 0.1
   _damage: 25
+  damage: {fileID: 8866985533353713528, guid: 3331273c97851604eac36a05fba6dad2, type: 3}
+  posti: {fileID: 551310269}
 --- !u!114 &1694296674
 MonoBehaviour:
   m_ObjectHideFlags: 0
