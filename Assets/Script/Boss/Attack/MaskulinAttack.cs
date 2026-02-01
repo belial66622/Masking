@@ -17,6 +17,7 @@ namespace Assets.Script.Boss.Attack
             Camera.main.GetComponent<IShake>().ShakeCamera(_cameraShakeDuration, _cameraMagnitude);
             Helper.Log("MaskulinAttack");
             _bossStateControl.attack(_damage);
+            SoundPlay.Instance.PlaySound("Maskulin");
         }
     }
 }
