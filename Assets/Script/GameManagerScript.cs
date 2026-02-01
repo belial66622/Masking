@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Script.Boss.Health;
 using Assets.Script;
+using Assets.Script.Utility;
 
 public class GameManagerScript : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class GameManagerScript : MonoBehaviour
     enum Block {Normal, Perfect, None}
     Action player1 = Action.Idle;
     Action player2 = Action.Idle;
-    float parryTime = 0.2f;
+    public float parryTime = 0.2f;
     float perfectWindow = 0.2f;
     float perfectBlockWindow = 0.2f;
     float p1DefenseTime;
@@ -63,6 +64,8 @@ public class GameManagerScript : MonoBehaviour
         {
             roundResolved = true;
             Result result = Battle();
+
+            Helper.Log($"ada result {result.ToString()}");
             PlayBattleVFX(result);
             Invoke(nameof(ResetRound), 1f);
         }
@@ -130,7 +133,7 @@ public class GameManagerScript : MonoBehaviour
         if (Boss != null)
         {
             Boss.OnDamage(5);
-            Boss.OnPoiseDamage(5f); 
+            //Boss.OnPoiseDamage(5f); 
         }
     }
 
@@ -139,7 +142,7 @@ public class GameManagerScript : MonoBehaviour
         if (Boss != null)
         {
             Boss.OnDamage(10);
-            Boss.OnPoiseDamage(10f); 
+            //Boss.OnPoiseDamage(10f); 
         }
     }
 
@@ -169,6 +172,9 @@ public class GameManagerScript : MonoBehaviour
     {
         switch (result)
         {
+            case Result.PerfectAttack:
+                VFX.PlayAttack();
+                    break;
             case Result.Attack:
                 VFX.PlayAttack();
                 break;

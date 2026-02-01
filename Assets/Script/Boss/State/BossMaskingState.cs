@@ -25,7 +25,7 @@ namespace Assets.Script.Boss.State
             bossState.DoneAttack += AttackFinished;
             bossState.OnAttack += Attack;
             Helper.Log("Masking enter");
-            _animatorhead.SetInteger(BossStateControl.FACEID, 1);
+            _animatorhead.SetInteger(BossStateControl.FACEID, 0);
             _bossStateControl.StartCoroutine(Helper.delay(
                 () => { _animator.SetTrigger(BossStateControl.MASKING); },1));
         }

@@ -11,6 +11,7 @@ namespace Assets.Script.Projectile
         [SerializeField] private float forwardSpeed;
         Vector3 _target = Vector3.zero; [SerializeField]
         private BossStateControl _boss;
+        [SerializeField]private float _damage;
 
         float MaxRotationSpeed;
 
@@ -30,7 +31,7 @@ namespace Assets.Script.Projectile
 
             if (Vector3.Distance(transform.position, _target) < .5f)
             {
-                _boss.attack();
+                _boss.attack(_damage);
                 Destroy(gameObject);
             }
         }

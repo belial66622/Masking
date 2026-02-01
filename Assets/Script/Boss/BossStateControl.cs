@@ -46,6 +46,10 @@ namespace Assets.Script.Boss
         [SerializeField]
         private MaskulinAttack _maskulinAttack;
 
+        public event Action OnAdditionalSoundPlay;
+
+        public event Action OnAdditionalAnimation;
+
 
         private void Update() => _stateMachine.Tick();
         // Update is called once per frame
@@ -182,13 +186,23 @@ namespace Assets.Script.Boss
             OnAttack?.Invoke();
         }
 
-        public void attack()
+        public void ActivateSound()
+        {
+            OnAdditionalSoundPlay?.Invoke();
+        }
+
+        public void ActivateAnimation()
+        {
+            OnAdditionalAnimation?.Invoke();
+        }
+
+        public void attack(float damage = 10)
         {
             if (_attackArea.Attack(out Collider col))
             {
                 if (col.TryGetComponent(out Ihealth ihealth))
                 {
-                    ihealth.OnDamage(10);
+                    ihealth.OnDamage(damage);
                 }
             }
             else 

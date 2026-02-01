@@ -1085,6 +1085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ceaeb75569b63c4d9937aacf1019ab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bossDamage: {fileID: 0}
   <MaxHealth>k__BackingField: 50
   healthBar: {fileID: 573262524}
 --- !u!65 &1757690846
@@ -1320,6 +1321,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 577700963}
     m_Modifications:
+    - target: {fileID: 1590577115, guid: 4d6e03e2dbcf31541a75faca522c191d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0041
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590577115, guid: 4d6e03e2dbcf31541a75faca522c191d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00402
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590577115, guid: 4d6e03e2dbcf31541a75faca522c191d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00385
+      objectReference: {fileID: 0}
     - target: {fileID: 2002406993, guid: 4d6e03e2dbcf31541a75faca522c191d, type: 3}
       propertyPath: bossStateControl
       value: 

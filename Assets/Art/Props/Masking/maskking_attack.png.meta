@@ -1,0 +1,1651 @@
+fileFormatVersion: 2
+guid: 4a60a629077a03e40ac529a0a4aa3291
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: maskking_attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2030403066304274e970d8ffe943fb78
+      internalID: -838411468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_1
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 896
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3e5b44102d72f4f816dd9899fca136
+      internalID: 804253324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_2
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 896
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73065341bb1bec4fac257d211b588d8
+      internalID: -1824175404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_3
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 896
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18dc659834856ef46a4b933e84bc9375
+      internalID: -540022184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_4
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 896
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50bad91a44ce4040b38391f190f000a
+      internalID: 1281472426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_5
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 896
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadff05130dc1524cb9a83e9d10a8488
+      internalID: 1288362619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_6
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 896
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23986240e3031f1479c75038c49d1be3
+      internalID: 159504347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_7
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 896
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c69796cf06a49e47b898983c90e2f42
+      internalID: -279761292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_8
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 896
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a99fd1db2d86b47abcdf143a62c13a
+      internalID: 1152304746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de64959a358878448ae6b0c0c488601
+      internalID: 2024712371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_10
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 768
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8280a677f9b7a4a4a9f043430443053a
+      internalID: -464586179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_11
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 768
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781aebc3e55995f47ad52f196e6c128a
+      internalID: -135558200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_12
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 768
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37365b9da693ac9458f72a8cc7d52cac
+      internalID: -2074868464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_13
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 768
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aeb1ad771c461449931cb57aee0bf59
+      internalID: 749943802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_14
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 768
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d95b23a578a7d742bd0b3e7dd48e15b
+      internalID: -158246736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_15
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 768
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcca7910a016f1446a6c587b8a3d1eb8
+      internalID: -806821857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_16
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 768
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fc900dac77acf4b8913d63dd0969db
+      internalID: 681488806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_17
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 768
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b44f15e5b980b419fc7f8025cdfeed
+      internalID: 234063771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad1ed30d171eed4e934b37b81cddc30
+      internalID: -1718441842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_19
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 640
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8ac39b446250c4fb392822c7a2c5cc
+      internalID: -291023311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_20
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 640
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d75c21b3762334e9e2f77c79bc995a
+      internalID: -129820319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_21
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 640
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df557dd9e51b72d46b88013cd129fefc
+      internalID: 2089396500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_22
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 640
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3b4f7ae4ac57a4991a6acb6888ae63
+      internalID: -2122801133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_23
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 640
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e25aa77213b3a4aa7039d56bf46bb9
+      internalID: -1187320423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_24
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 640
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4285a4f5e03cb241879d14d4d0c9beb
+      internalID: 268570797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_25
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 638
+        width: 228
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b983392163300b945b21bb2991e4202f
+      internalID: 560879097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_26
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 640
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d9e090b49729b4d892159d26e7bcfe
+      internalID: -77669325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd8e8f1bfb3d8a48a76cb60db6d3d55
+      internalID: 291768915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_28
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 512
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b08327bae800a34d934e15af3eb0b0d
+      internalID: -1911577068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_29
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 512
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9887cbd4462c6b4da10c7e000161e2a
+      internalID: 243049998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_30
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 512
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264341bc6b53e0545a2861f1d9ad8b0c
+      internalID: 1056246328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_31
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 512
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60e9515cad5d6b4eacb69df25d08178
+      internalID: 1700767092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_32
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 512
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6c71785b1f2604baf44e5a8cb5f1eb
+      internalID: -830482549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_33
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 512
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe354090b2379f4c9cc238eced2a82b
+      internalID: 451562135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_34
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 512
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6eed98742807a4689b2eec7a4763c6
+      internalID: 110283995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_35
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 512
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59c6291c0e22504eb3fbe79ec848300
+      internalID: -1174962794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d20411442d5c1d4e9aa59200de55131
+      internalID: -1136762900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_37
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 384
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6877cf6a3fe71104d9c756f17233f933
+      internalID: -161296621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_38
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 384
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9a62f961ae5ae438c18d1abf19f16c
+      internalID: 650451934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_39
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 384
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25d7d621cdded749af8f2e1df214463
+      internalID: 1128845159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_40
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 384
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6709c79c6c4fa24ea19518ae92396ea
+      internalID: 2045059307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_41
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 384
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b96800cabf8e1418fc6bf1e8aa5012
+      internalID: 24926892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_42
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 384
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2a28f3bb4b13f43bc051de164637d4
+      internalID: 1815744960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_43
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 384
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85ecc5673de7e447866d0f615fd802b
+      internalID: -1751382573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_44
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 384
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504e332137c085a479f2dba7e4149e8e
+      internalID: -482442697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7ef22947110034c8c807afbb431152
+      internalID: 870549184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_46
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 256
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a71640f16c5194781a9b9e1d2f1e12
+      internalID: -832446921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_47
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 256
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fdbddb7bf397244b94cf25681868c0
+      internalID: 241270977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_48
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 256
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28087ffc37d6ca438bd3774db1e743f
+      internalID: 1588412058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_49
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 256
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aed41db33474e046b6affeaa49e03b7
+      internalID: -363969230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_50
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 256
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d3923ee2a881b4daa2e9e4b7199b03
+      internalID: 1919556935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_51
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 256
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7add7b1b474c13a4db6c7f4458015d0c
+      internalID: -601558557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_52
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 256
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47aea1605e0ba7e4db9704698ae85211
+      internalID: 965453784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_53
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 256
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3f0cff9598cc747bf57766acc91a5e
+      internalID: -431973050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7215b747a631d424b9b258c44c2873ae
+      internalID: 2091334858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_55
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 128
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d4de9d34cb3ae42b6814fa4c10d6f0
+      internalID: -1561990089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_56
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 128
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967aefce31ecab149815bc4393090e37
+      internalID: -233226142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_57
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 128
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5eb67e7375418943845f3c320153d4f
+      internalID: -993519247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_58
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 128
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce710d40d18374f4ebb9a0435f1cca5a
+      internalID: -634193342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_59
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 128
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb012f497c63224bac16910288f88d7
+      internalID: -635035416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_60
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 128
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c99145fa2aea44aa97eee9008cd1a3
+      internalID: 1318759580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_61
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 128
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6a869f041161044984e63c08a35c11
+      internalID: -83245003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_62
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 128
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e431bc9de936d2349a5b334f938209b7
+      internalID: -955323180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a05c50281036c247bb386bd6b0e6793
+      internalID: -1663403812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_64
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 0
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5065b2ec64e0f4a94436dee96fa363
+      internalID: 1051915686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_65
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 0
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6134af8ef71c5499ad47b0957c50e8
+      internalID: -182433430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_66
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 0
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c07f70b3ab64740acc4e6cf71e096f
+      internalID: -1944681134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_67
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 0
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f9b93f675568b4f9c8e8debe254269
+      internalID: 1091717676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_68
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 0
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4e3e57ab3d2ff4096e08f73e754da0
+      internalID: 1652463554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskking_attack_69
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 0
+        width: 227.55556
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14094beee088b1d4ba2c735c38513a3a
+      internalID: 1938670047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 75f4bd2f2f5992645a8a1a37c8868482
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      maskking_attack_0: -838411468
+      maskking_attack_1: 804253324
+      maskking_attack_10: -464586179
+      maskking_attack_11: -135558200
+      maskking_attack_12: -2074868464
+      maskking_attack_13: 749943802
+      maskking_attack_14: -158246736
+      maskking_attack_15: -806821857
+      maskking_attack_16: 681488806
+      maskking_attack_17: 234063771
+      maskking_attack_18: -1718441842
+      maskking_attack_19: -291023311
+      maskking_attack_2: -1824175404
+      maskking_attack_20: -129820319
+      maskking_attack_21: 2089396500
+      maskking_attack_22: -2122801133
+      maskking_attack_23: -1187320423
+      maskking_attack_24: 268570797
+      maskking_attack_25: 560879097
+      maskking_attack_26: -77669325
+      maskking_attack_27: 291768915
+      maskking_attack_28: -1911577068
+      maskking_attack_29: 243049998
+      maskking_attack_3: -540022184
+      maskking_attack_30: 1056246328
+      maskking_attack_31: 1700767092
+      maskking_attack_32: -830482549
+      maskking_attack_33: 451562135
+      maskking_attack_34: 110283995
+      maskking_attack_35: -1174962794
+      maskking_attack_36: -1136762900
+      maskking_attack_37: -161296621
+      maskking_attack_38: 650451934
+      maskking_attack_39: 1128845159
+      maskking_attack_4: 1281472426
+      maskking_attack_40: 2045059307
+      maskking_attack_41: 24926892
+      maskking_attack_42: 1815744960
+      maskking_attack_43: -1751382573
+      maskking_attack_44: -482442697
+      maskking_attack_45: 870549184
+      maskking_attack_46: -832446921
+      maskking_attack_47: 241270977
+      maskking_attack_48: 1588412058
+      maskking_attack_49: -363969230
+      maskking_attack_5: 1288362619
+      maskking_attack_50: 1919556935
+      maskking_attack_51: -601558557
+      maskking_attack_52: 965453784
+      maskking_attack_53: -431973050
+      maskking_attack_54: 2091334858
+      maskking_attack_55: -1561990089
+      maskking_attack_56: -233226142
+      maskking_attack_57: -993519247
+      maskking_attack_58: -634193342
+      maskking_attack_59: -635035416
+      maskking_attack_6: 159504347
+      maskking_attack_60: 1318759580
+      maskking_attack_61: -83245003
+      maskking_attack_62: -955323180
+      maskking_attack_63: -1663403812
+      maskking_attack_64: 1051915686
+      maskking_attack_65: -182433430
+      maskking_attack_66: -1944681134
+      maskking_attack_67: 1091717676
+      maskking_attack_68: 1652463554
+      maskking_attack_69: 1938670047
+      maskking_attack_7: -279761292
+      maskking_attack_8: 1152304746
+      maskking_attack_9: 2024712371
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
