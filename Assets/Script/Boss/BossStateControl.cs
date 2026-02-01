@@ -141,8 +141,8 @@ namespace Assets.Script.Boss
         public void ChooseAttack()
         {
             var t = Enum.GetNames(typeof(AttackState)).Length;
-            //_attackingState = (AttackState)UnityEngine.Random.Range(0, t);
-            _attackingState = (AttackState)2;
+            _attackingState = (AttackState)UnityEngine.Random.Range(0, t);
+            //_attackingState = (AttackState)2;
         }
 
         public void ClearStun()
