@@ -2,21 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Script.Boss.Health;
+using Assets.Script;
 
 public class GameManagerScript : MonoBehaviour
 {
     enum Action {Idle, Attack, Defense, Parry}
-    enum Result {Attack, Defense, Parry, Miss}
-    public TextMeshProUGUI resultText;
+    enum Result {Attack, Defense, Parry, Miss, PerfectAttack}
+    enum Block {Normal, Perfect, None}
     Action player1 = Action.Idle;
     Action player2 = Action.Idle;
     float parryTime = 0.2f;
+    float perfectWindow = 0.2f;
+    float perfectBlockWindow = 0.2f;
     float p1DefenseTime;
     float p2DefenseTime;
     public VFXScript VFX;
     bool roundResolved = false;
     float p1ActionTime;
     float p2ActionTime;
+    public BossHealth Boss;
+    public heallthDummy playerHealth;
+    float bossAttackTime;
+    bool bossIsAttacking;
+    
 
     float connectWindow = 0.5f;
         
@@ -66,27 +75,94 @@ public class GameManagerScript : MonoBehaviour
 
         if (timeDiff > connectWindow)
             return Result.Miss;
-        DefenseParry();
         if (player1 == Action.Attack && player2 == Action.Attack)
         {
-            resultText.text = "attack";
-            return Result.Attack;
-        }
-        else if (player1 == Action.Parry && player2 == Action.Parry)
-        {
-            resultText.text = "parry";
-            return Result.Parry;
+            if (timeDiff <= perfectWindow)  
+            {
+                PerfectAttackBoss();
+                return Result.PerfectAttack; 
+            }
+            else
+            {
+                AttackBoss();
+                return Result.Attack;
+            }
         }
         else if (player1 == Action.Defense && player2 == Action.Defense)
         {
-            resultText.text = "defense";
-            return Result.Defense;
+            if (IsParryTiming())
+            {
+                playerHealth.SetBlock(heallthDummy.BlockType.Perfect);
+                ParryAttack();
+                return Result.Parry;
+            }
+            if (timeDiff <= perfectBlockWindow)
+            {
+                playerHealth.SetBlock(heallthDummy.BlockType.Perfect);
+                return Result.Defense;
+            }
+            else 
+            {
+                playerHealth.SetBlock(heallthDummy.BlockType.Normal);
+                return Result.Defense;
+            }
         }
         else
         {
-            resultText.text = "miss";
             return Result.Miss;
         }
+    }
+
+    bool IsParryTiming()
+    {
+        if (!bossIsAttacking)
+            return false;
+
+        float p1Diff = Mathf.Abs(p1ActionTime - bossAttackTime);
+        float p2Diff = Mathf.Abs(p2ActionTime - bossAttackTime);
+
+        return p1Diff <= parryTime && p2Diff <= parryTime;
+    }
+    
+
+    void AttackBoss()
+    {
+        if (Boss != null)
+        {
+            Boss.OnDamage(5);
+            Boss.OnPoiseDamage(5f); 
+        }
+    }
+
+    void PerfectAttackBoss()
+    {
+        if (Boss != null)
+        {
+            Boss.OnDamage(10);
+            Boss.OnPoiseDamage(10f); 
+        }
+    }
+
+    void ParryAttack()
+    {
+        if (Boss != null)
+        {
+            Boss.OnDamage(30);
+            Boss.OnPoiseDamage(15f); 
+        }
+    }
+
+    public void BossAttack()
+    {
+        bossAttackTime = Time.time;
+        bossIsAttacking = true;
+
+        Invoke(nameof(EndBossAttack), 0.2f);
+    }
+
+    void EndBossAttack()
+    {
+        bossIsAttacking = false;
     }
 
     void PlayBattleVFX(Result result)
@@ -106,25 +182,14 @@ public class GameManagerScript : MonoBehaviour
                 break;
         }
     }
-    void DefenseParry()
-    {
-        if (player1 == Action.Defense && player2 == Action.Defense)
-        {
-            float timeDiff = Mathf.Abs(p1DefenseTime - p2DefenseTime);
-
-            if (timeDiff <= parryTime)
-            {
-                player1 = Action.Parry;
-                player2 = Action.Parry;
-            }
-        }
-    }
+    
 
     void ResetRound()
     {
         roundResolved = false;
         player1 = Action.Idle;
         player2 = Action.Idle;
-        resultText.text = "test:";
+        playerHealth.SetBlock(heallthDummy.BlockType.None);
+        bossIsAttacking = false;
     }
 }
