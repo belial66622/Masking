@@ -19,6 +19,9 @@ namespace Assets.Script
         private float BlockReduction = 0.5f;
 
         private float currentHealth;
+        private bool hasShield = false;
+        [SerializeField]
+        private Animator shieldAnimator; 
 
 
         [SerializeField]
@@ -33,6 +36,11 @@ namespace Assets.Script
 
         public void OnDamage(float damage)
         {
+            if (hasShield)
+            {
+                ConsumeShield();
+                return;
+            }
             float finalDamage = damage;
             bossDamage?.BossAttack();
             StartCoroutine(Helper.delay(
@@ -73,6 +81,29 @@ namespace Assets.Script
             currentHealth = MaxHealth;
             healthBar.fillAmount = 1f;
             
+        }
+
+        public void GrantShield()
+        {
+            hasShield = true;
+
+            if (shieldAnimator != null)
+            {
+                shieldAnimator.gameObject.SetActive(true);
+                shieldAnimator.ResetTrigger("Break");
+                shieldAnimator.SetTrigger("Appear");
+            }
+        }
+
+        void ConsumeShield()
+        {
+            hasShield = false;
+            shieldAnimator.SetTrigger("Break");
+        }
+
+        public void DisableShield() 
+        {
+            shieldAnimator.gameObject.SetActive(false);
         }
     }
 }
