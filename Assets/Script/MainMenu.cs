@@ -35,6 +35,11 @@ public class MainMenu : MonoBehaviour
     public void LoadGameScene()
     {
         foreach(GameObject item in title){item.SetActive(false);}
-        SceneManager.LoadScene("Player");
+        SceneManager.LoadScene(1);
+    }
+
+    public void exit()
+    { 
+        Application.Quit();
     }
 }

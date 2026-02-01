@@ -51,6 +51,17 @@ public class VideoControl : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+
+    public void Skip()
+    {
+        player.Stop();
+        if (player.clip.name == "Intro")
+        {
+            _bossStateControl.start = true;
+            _videoPlayer.SetActive(false);
+            return;
+        }
+    }
 }
 
 [Serializable]
