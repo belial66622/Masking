@@ -131,8 +131,9 @@ public class GameManagerScript : MonoBehaviour
 
     bool DefenseTiming()
     {
-        float d1 = bossAttackTime - p1ActionTime;
-        float d2 = bossAttackTime - p2ActionTime;
+        
+        float d1 = Mathf.Abs(p1ActionTime - bossAttackTime);
+        float d2 = Mathf.Abs(p2ActionTime - bossAttackTime);
 
         
         return d1 >= 0f && d1 <= perfectBlockWindow &&

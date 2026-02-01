@@ -63,6 +63,7 @@ namespace Assets.Script
                         SoundPlay.Instance.PlaySound("PlayerHit");
                     }
                     currentHealth -= finalDamage;
+                    Debug.Log("final dmg"+ finalDamage);
                     currentHealth = Mathf.Clamp(currentHealth, 0, MaxHealth);
                     healthBar.fillAmount = currentHealth / MaxHealth;
                     OnHealthChange?.Invoke(currentHealth);
